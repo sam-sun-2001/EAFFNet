@@ -316,9 +316,9 @@ class OutConv(nn.Module):
     def forward(self, x):
         return self.conv(x)
 
-class Unet(nn.Module):
+class EAFFNet(nn.Module):
     def __init__(self, n_channels, n_classes, bilinear=False):
-        super(Unet, self).__init__()
+        super(EAFFNet, self).__init__()
         self.n_channels = n_channels
         self.n_classes = n_classes
         self.bilinear = bilinear
